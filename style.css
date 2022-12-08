@@ -1,0 +1,108 @@
+@font-face {
+    font-family: digital-7;
+    src: url('digital-7.ttf');
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background: rgb(116, 116, 240);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+.container{
+	width: 450px;
+	height: 600px;
+	background: rgb(245, 240, 244);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+p{
+	margin-bottom: 8px;
+}
+.title{
+	position: absolute;
+	top: 0px;
+	height: 40px;
+	width: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: blue;
+	color: white;
+}
+input{
+	position: absolute;
+	left: 5%;
+	top: 15%;
+	height: 60px;
+	width: 100px;
+	background: white;
+}
+button{
+	position: absolute;
+	right: 5%;
+	top: 15%;
+	height: 60px;
+	background: blue;
+	outline: none;
+	color: white;
+	width: 120px;
+	border: none;
+	border-radius: 20px;
+}
+button:hover{
+	background: rgb(245, 240, 244);
+	color: rgb(116, 116, 240);
+	border: 2px solid rgb(116, 116, 240);
+	cursor: pointer;
+}
+i{
+	font-size: 25px;
+	letter-spacing: 3px;
+}
+#year, #month, #week, #days, #hours, #minutes, #seconds{
+	font-family: digital-7;
+	font-size: 30px;
+	color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+	.container{
+		width: 400px;
+		height: 500px;
+		background: rgb(245, 240, 244);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+	}
+	.calculate{
+		padding-top: 90px;
+	}
+	.title{
+		position: absolute;
+		top: 0px;
+		height: 40px;
+		width: 400px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: blue;
+		color: white;
+	}
+	p{
+		margin-bottom: 8px;
+	}
+}
